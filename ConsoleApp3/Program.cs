@@ -54,9 +54,9 @@ namespace Exercise_4
                 Console.WriteLine("\nStack Empty");
             else
             {
-                for (int i = 0; i < 17; i++)
+                for (int i = 0; i < top; i++)
                 {
-                    Console.WriteLine("Array Stack: " + wildan[top]);
+                    Console.WriteLine("Array Stack: " + wildan[i]);
                 }
             }
         }
@@ -66,6 +66,33 @@ namespace Exercise_4
             StackArray s = new StackArray(18);
             while (true)
             {
+                Console.WriteLine();
+                Console.WriteLine("\n***Stack Menu***\n");
+                Console.WriteLine("1. Push.");
+                Console.WriteLine("2. Pop. ");
+                Console.WriteLine("3. Display. ");
+                Console.WriteLine("4. Exit");
+                Console.Write("\nEnter your choice: ");
+                string sInput = Console.ReadLine();
+
+                char ch = Convert.ToChar(sInput == "" ? "0" : sInput);
+                switch (ch)
+                {
+                    case '1':
+                        s.push();
+                        break;
+                    case '2':
+                        s.pop();
+                        break;
+                    case '3':
+                        s.display();
+                        break;
+                    case '4':
+                        return;
+                    default:
+                        Console.WriteLine("\nInvalid Choice");
+                        break;
+                }
 
             }
         }
