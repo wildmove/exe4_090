@@ -10,6 +10,16 @@ namespace Exercise_4
 
         int top = -1;
 
+        bool empty()
+        {
+            if (top == -1)
+                return (true);
+            else
+                return (false);
+        }
+
+        
+
         
     }
 }
