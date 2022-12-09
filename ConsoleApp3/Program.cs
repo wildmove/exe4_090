@@ -33,8 +33,9 @@ namespace Exercise_4
                 Console.WriteLine("\nStack Full");
             else
                 Console.WriteLine("\nEnter an character: ");
-                char array = Convert.ToChar(Console.ReadLine());
-                
+                wildan[top] = Convert.ToChar(Console.ReadLine());
+
+            Console.WriteLine("Push element :" + wildan[top]);
                 top++;
         }
 
@@ -43,7 +44,7 @@ namespace Exercise_4
             if (empty())
                 Console.WriteLine("\nStack Empty");
             else
-                Console.WriteLine("\nThe popped element is: " + top);
+                Console.WriteLine("\nThe popped element is: " + wildan[top]);
                 top = top - 1;
         }
 
@@ -55,7 +56,7 @@ namespace Exercise_4
             {
                 for (int i = 0; i < 17; i++)
                 {
-                    Console.WriteLine("Array Stack: " + array[i]);
+                    Console.WriteLine("Array Stack: " + wildan[top]);
                 }
             }
         }
