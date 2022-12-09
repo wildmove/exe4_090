@@ -18,11 +18,27 @@ namespace Exercise_4
                 return (false);
         }
 
+        
         public void pop()
         {
             Console.WriteLine("\nThe popped element is: " + top);
             top = top - 1;
         }
+
+        public void display()
+        {
+            if(empty())
+                Console.WriteLine("\nStack Empty");
+            else
+            {
+                for (int i = 0; i < 17; i++)
+                {
+                    Console.WriteLine("Array Stack: " + array[i]);
+                }
+            }
+        }
+
+
 
 
     }
