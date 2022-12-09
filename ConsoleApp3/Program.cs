@@ -7,7 +7,7 @@ namespace Exercise_4
     {
         //Declare array
         char[] array = new char[18];
-
+        int max = 18;
         int top = -1;
 
         bool empty()
@@ -44,6 +44,11 @@ namespace Exercise_4
                     Console.WriteLine("Array Stack: " + array[i]);
                 }
             }
+        }
+
+        static void Main(String[] args)
+        {
+
         }
 
 
