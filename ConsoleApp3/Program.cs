@@ -18,9 +18,13 @@ namespace Exercise_4
                 return (false);
         }
 
-        
+        public void pop()
+        {
+            Console.WriteLine("\nThe popped element is: " + top);
+            top = top - 1;
+        }
 
-        
+
     }
 }
 
