@@ -61,7 +61,19 @@ namespace Exercise_4
             }
         }
 
-        
+        static void Main(string[] args)
+        {
+            StackArray s = new StackArray(18);
+            while (true)
+            {
+
+            }
+        }
+
+
+
+
+
 
 
 
