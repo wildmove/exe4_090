@@ -44,8 +44,9 @@ namespace Exercise_4
             if (empty())
                 Console.WriteLine("\nStack Empty");
             else
-                Console.WriteLine("\nThe popped element is: " + wildan[top]);
                 top = top - 1;
+                Console.WriteLine("\nThe popped element is: " + wildan[top]);
+                
         }
 
         public void display()
@@ -56,7 +57,7 @@ namespace Exercise_4
             {
                 for (int i = 0; i < top; i++)
                 {
-                    Console.WriteLine("Array Stack: " + wildan[i]);
+                    Console.WriteLine("<" + wildan[i] + ">");
                 }
             }
         }
@@ -96,14 +97,6 @@ namespace Exercise_4
 
             }
         }
-
-
-
-
-
-
-
-
 
     }
 }
