@@ -3,12 +3,20 @@ using System.ComponentModel.DataAnnotations;
 
 namespace Exercise_4
 {
-    class Program
+    class StackArray
     {
-        //Declare array
-        char[] array = new char[18];
-        int max = 18;
-        int top = -1;
+        public char[] wildan;
+        public int top;
+        public int max;
+
+        public StackArray(int size)
+        {
+            wildan = new char[18];
+            int top = -1;
+            int max = 18;
+
+        }
+        
 
         bool empty()
         {
@@ -21,7 +29,13 @@ namespace Exercise_4
 
         public void push()
         {
-
+            if (top == max - 1)
+                Console.WriteLine("\nStack Full");
+            else
+                Console.WriteLine("\nEnter an character: ");
+                char array = Convert.ToChar(Console.ReadLine());
+                
+                top++;
         }
 
         public void pop()
@@ -46,10 +60,7 @@ namespace Exercise_4
             }
         }
 
-        static void Main(String[] args)
-        {
-
-        }
+        
 
 
 
